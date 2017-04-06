@@ -1,0 +1,62 @@
+{
+  "name": "sample-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "electron-compile": "^6.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-react": "^6.23.0",
+    "electron-forge": "^2.9.0",
+    "electron-prebuilt-compile": "1.6.2",
+    "foreman": "^2.0.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "dev": "nf start -p 3000",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "eject": "react-scripts eject",
+    "react-start": "react-scripts start",
+    "electron-start": "node src/electron-start"
+  },
+  "productName": "SampleApp",
+  "main": "src/electron-main.js",
+  "homepage": "./",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": ""
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": ""
+      }
+    }
+  }
+}
