@@ -1,6 +1,6 @@
 # electron-react-template
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), and has been modified to use build tools provided by [Electron Forge](https://github.com/electron-userland/electron-forge) to quickly develop and publish Electron applications.
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), and has been modified to use build tools provided by [Electron Forge](https://github.com/electron-userland/electron-forge) and [React Router](https://reacttraining.com/react-router/web/guides/quick-start) to quickly develop and publish Electron applications.
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
